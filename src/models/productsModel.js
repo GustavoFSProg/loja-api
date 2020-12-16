@@ -4,7 +4,6 @@ const schema = new Schema({
   title: {
     type: String,
     unique: true,
-    index: true,
     required: true,
   },
   description: {
@@ -14,7 +13,7 @@ const schema = new Schema({
     type: String,
   },
   image: {
-    type: Array[String],
+    type: String,
   },
 
   price: {
