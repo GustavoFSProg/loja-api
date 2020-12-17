@@ -1,7 +1,8 @@
 import Router from 'express'
 import multer from 'multer'
-import productsController from './controllers/productsController'
-import uploadConfig from './config/uploadConfig'
+import productsController from '../controllers/productsController'
+
+import uploadConfig from '../config/uploadConfig'
 
 const upload = multer(uploadConfig)
 
