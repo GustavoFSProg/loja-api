@@ -25,4 +25,14 @@ async function getUsers(req, res) {
   }
 }
 
-export default { create, getUsers }
+async function getById(req, res) {
+  try {
+    const data = await usersModel.findById(req.params.id)
+
+    return res.status(200).send(data)
+  } catch (error) {
+    return res.status(400).send(error)
+  }
+}
+
+export default { create, getById, getUsers }
