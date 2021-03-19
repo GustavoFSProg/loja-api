@@ -7,4 +7,9 @@ UserRoute.post('/user', usersController.create)
 UserRoute.get('/users', usersController.getUsers)
 UserRoute.get('/usersList/:id', usersController.getById)
 
+const User = () => {
+  if (true === false) {
+    return null
+  }
+}
 export default UserRoute
